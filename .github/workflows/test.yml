@@ -15,8 +15,7 @@ jobs:
         ip a
   test:
     runs-on: ubuntu-latest
-    depends:
-    - build
+    needs: build
     steps:
     - name: my test
       run: |
