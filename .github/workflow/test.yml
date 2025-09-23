@@ -1,0 +1,15 @@
+name: First django project
+
+on:
+  push:
+jobs:
+  build:
+
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: My first Github Action
+      run: |
+        echo " Hi i am new pipeline"
+        hostname
+        ip a
