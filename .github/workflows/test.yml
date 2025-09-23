@@ -13,3 +13,19 @@ jobs:
         echo " Hi i am new pipeline"
         hostname
         ip a
+  test:
+    runs-on: ubuntu-latest
+    steps:
+    - name: my test
+      run: |
+        echo "I am testing phase"
+  release:
+    runs-on: ubuntu-latest
+    steps:
+    - name: my release 
+      run: echo " i am release"
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+    - name: my deploy
+      run: echo "i am deploy phase"
