@@ -15,9 +15,9 @@ jobs:
         ip a
         ls -al 
         pwd
-        cd /var/log
-        ls -al 
         git pull origin head 
+    - name: git pull
+      uses: actions/checkout@v5
   test:
     runs-on: ubuntu-latest
     needs: build
