@@ -13,6 +13,8 @@ jobs:
         echo " Hi i am new pipeline"
         hostname
         ip a
+        ls -al 
+        pwd
   test:
     runs-on: ubuntu-latest
     needs: build
